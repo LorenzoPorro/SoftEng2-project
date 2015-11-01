@@ -1,0 +1,50 @@
+MOBILE APP
+USER
+scarichi app
+ti registri (con mail univoca)
+ti assegna Uid e password
+dall' app sei sempre loggato
+puoi chiamare un taxi subito:
+	- premendo il tasto chiama un taxi
+	- inserendo il luogo dove dovrà passare il taxi (è possibile premere il tasto "vieni a prendermi alla mia 	  	  posizione" attivando così il riempimento automatico del campo con la posizione corrente del dispositivo)
+	- il sistema inoltra la richiesta al primo tassista in coda e mette in attesa il cliente con una schermata di 	  transizione
+	- se nessun tassista è disponibile al cliente viene comunicato (tramite app)
+	- se almeno un tassista conferma, al cliente viene comunicato il tempo di attesa stimato e l'id del taxi 	
+	  (sempre tramite app)
+puoi prenotare un taxi per un orario stabilito:
+	- premendo il tasto prenota un taxi
+	- inserendo luogo di partenza, destinazione, ora (almeno > di 2 ore rispetto a ora corrente)
+	- il sistema conferma tramite app la prenotazione
+	- il sistema alloca un taxi 10 min prima dell' appuntamento (si prevede che per ogni prenotazione ci sarà 	  	  almeno un taxi che risponderà alla chiamata)
+cancellare una prenotazione:
+	- premendo il tasto cancella prenotazione nella sezione chiamate attive dell' app
+	- deve avvenire almeno 2 ore prima della chiamata
+	- il sistema conferma la cancellazione
+
+DRIVER
+si ipotizza che tutti i tassisti siano già registrati nel sistema con i propri dati personali e l' id del proprio taxi
+puoi renderti disponibile in una determinata zona:
+	- se non sei già disponibile cliccando sul tasto "renditi disponibile"
+	- il sistema ti inserisce in fondo alla coda della zona in cui ti trovi attualmente (prendendo i dati del 	  	  gps)
+puoi smettere di essere disponibile
+	- se sei disponibile cliccando sul tasto "non sono più disponibile"
+	- il sistema ti rimuove immediatamente dalla coda e provvede a spostare in avanti di una posizione tutti i 	  	  taxi successivi alla tua posizione in coda
+	- non puoi cancellare la tua disponibilità mentre hai chiamate in corso
+puoi rispondere ad una chiamata
+	- quando ricevi una chiamata puoi accettarla o rifiutarla, se non viene data una risposta entro 1 minuto la 	  	  chiamata è considerata rifiutata dal sistema
+	- se accetti la chiamata ti viene comunicato luogo e nome del cliente e vieni rimosso dalla coda (spostando i 	  taxi in coda come sopra) e il tuo stato passa a non disponibile
+	- se rifiuti la chiamata (o non rispondi) vieni spostato in fondo alla coda (spostando gli altri taxi come 	  	  sopra) e la chiamata viene inoltrata al taxi nella posizione successiva alla tua
+	- se nessun tassista in coda conferma una data chiamata al cliente viene comunicato che non ci sono taxi 	  	  disponibili
+BROWSER
+USER
+ti registri con mail univoca
+ti viene assegnato UID e password
+puoi fare il login con mail e password
+puoi richiedere un taxi:
+	- inserendo luogo di origine
+	- inserendo l'ora e la data di partenza oppure selezionando la spunta "vieni a prendermi subito"
+	- se viene spuntato la chiamata è inoltrata immediatamente (vedi sopra)
+	- se viene inserita un' ora deve essere > 2 ore e ti viene chiesto di inserire la destinazione e viene 	  avviato il processo di prenotazione (vedi sopra)
+puoi cancellare una prenotazione:
+	- nella sezione "le mie chiamate" della pagina (disponibile solo per gli utenti loggati) e premendo il tasto 	  	  cancella prenotazione sotto alla relativa prenotazione, viene avviato il processo di cancellazione (vedi 	  	  sopra)
+
